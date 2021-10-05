@@ -6,19 +6,18 @@
     font-style: normal;
 }
 
-:root{
-    --blanc : #F2F2F2;
-    --blue_grey:#778ca3;
-    --blue_horizon:#4b6584;
-    --twinkle_blue:#d1d8e0;
-    --innuendo:#a5b1c2;
-    --boyzone:#2d98da;
-    --high_blue:#45aaf2;
-    --nyc_taxi:#f7b731;
-    --fuion_red:#fc5c65;
-    --beniukon_bronze:#fa8231;
+:root {
+    --blanc: #F2F2F2;
+    --blue_grey: #778ca3;
+    --blue_horizon: #4b6584;
+    --twinkle_blue: #d1d8e0;
+    --innuendo: #a5b1c2;
+    --boyzone: #2d98da;
+    --high_blue: #45aaf2;
+    --nyc_taxi: #f7b731;
+    --fuion_red: #fc5c65;
+    --beniukon_bronze: #fa8231;
 }
-
 
 * {
     margin: 0;
@@ -45,28 +44,32 @@ h2 {
     color: var(--high_blue);
 }
 
+.index_body {
+    position: relative;
+    height: 100vh;
+}
+
 /* ******************** HEADER *************************** */
 
 header {
-    height: 20%;
     background-color: var(--blue_horizon);
     width: 100%;
     top: 0px;
-    position: -webkit-sticky;
     position: sticky;
-} 
+}
 
 /* ******************** BANDEAU  *************************** */
 
 .container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     text-align: right;
     width: 100%;
     height: auto;
     background-color: var(--blue_horizon);
     padding-bottom: 10px;
+    position: sticky;
 }
 
 #photo {
@@ -80,49 +83,70 @@ header {
     object-fit: cover;
 }
 
-.photo{
+.photo {
     margin-left: 50px;
 }
 
-.identity{
+.identity {
     color: var(--innuendo);
     padding-bottom: 10px;
     margin-left: 20px;
 }
 
-.futur_metier{
+.futur_metier {
     color: var(--nyc_taxi);
 }
 
-.phone_number{
+.phone_number {
     color: var(--twinkle_blue);
     font-size: 1.3rem;
 }
 
-.iconsContainer {
+/* *********************MAIN**************************** */
+
+.main{
     display: flex;
-    justify-content: space-around;
+    width: 100%;
 }
 
-
-.icon {
+.photo_principale{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+.photo-profil{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 1.5rem;
-    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    border: 2px solid var(--twinkle_blue);
     border-radius: 50%;
-    min-width: 44px;
-    min-height: 44px;
-    margin: 10px;
-    
+    object-fit: cover;
 }
 
-.icon:hover {
-    color: var(--beniukon_bronze);
-    border: 1px solid var(--beniukon_bronze);
-    margin: 10px;
+.Presentation{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 100px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.2;
+}
+.liste-postes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-presentation{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 /* ******************** MENU *************************** */
@@ -135,13 +159,13 @@ header {
     padding: 20px;
     height: 100px;
     background-color: var(--blue_horizon);
-    
     font-weight: bold;
-    font-size: 1.3rem;;
+    font-size: 1.3rem;
+    ;
 }
 
 .aNav {
-    margin-left : 20px;
+    margin-left: 20px;
     color: var(--blanc);
 }
 
@@ -234,7 +258,7 @@ header {
     flex-wrap: wrap;
     align-items: top;
     width: 90%;
-    margin: 0 auto ;
+    margin: 0 auto;
 }
 
 .CompCard {
@@ -269,7 +293,7 @@ header {
     color: var(--blanc);
 }
 
-.bandeau_titre{
+.bandeau_titre {
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -295,11 +319,10 @@ header {
     flex-direction: column;
     /* align-items: top; */
     width: 90%;
-    
     margin: 50px auto 20px auto;
 }
 
-.vignette_diplome{
+.vignette_diplome {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -307,18 +330,48 @@ header {
     padding: 0 50px;
 }
 
-.diplome{
+.diplome {
     width: 100px;
     border-radius: 10px;
-    border:1px solid darkgrey;
-
+    border: 1px solid darkgrey;
 }
 
 /* ************************ FOOTER ***************************** */
 
-footer{
+footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--blue_horizon);
+    width: 100%;
+    bottom: 0px;
+    
+    
+}
+
+.iconsContainer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-
 }
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    margin: 10px;
+}
+
+.icon:hover {
+    color: var(--nyc_taxi);
+    border: 1px solid var(--nyc_taxi);
+    margin: 10px;
+}
+
+
+
