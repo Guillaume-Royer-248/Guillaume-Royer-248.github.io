@@ -6,6 +6,20 @@
     font-style: normal;
 }
 
+:root{
+    --blanc : #F2F2F2;
+    --blue_grey:#778ca3;
+    --blue_horizon:#4b6584;
+    --twinkle_blue:#d1d8e0;
+    --innuendo:#a5b1c2;
+    --boyzone:#2d98da;
+    --high_blue:#45aaf2;
+    --nyc_taxi:#f7b731;
+    --fuion_red:#fc5c65;
+    --beniukon_bronze:#fa8231;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -22,18 +36,20 @@
 
 h1 {
     font-size: 2rem;
+    color: var(--twinkle_blue);
 }
 
 h2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: var(--high_blue);
 }
 
 /* ******************** HEADER *************************** */
 
 header {
     height: 20%;
-    background-color: white;
+    background-color: var(--blue_horizon);
     width: 100%;
     top: 0px;
     position: -webkit-sticky;
@@ -44,35 +60,50 @@ header {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
-    text-align: center;
+    text-align: right;
     width: 100%;
-    margin: auto;
-    height: 200px;
-    background-color: white;
+    height: auto;
+    background-color: var(--blue_horizon);
+    padding-bottom: 10px;
 }
 
 #photo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    width: 150px;
-    border: 2px solid white;
+    height: 80px;
+    width: 80px;
+    border: 2px solid var(--twinkle_blue);
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 2px 8px 8px #42416F;
 }
 
-#indentity, h2 {
-    color: #42416F;
+.photo{
+    margin-left: 50px;
+}
+
+.identity{
+    color: var(--innuendo);
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.futur_metier{
+    color: var(--nyc_taxi);
+}
+
+.phone_number{
+    color: var(--twinkle_blue);
+    font-size: 1.3rem;
 }
 
 .iconsContainer {
     display: flex;
     justify-content: space-around;
 }
+
 
 .icon {
     display: flex;
@@ -85,11 +116,12 @@ header {
     min-width: 44px;
     min-height: 44px;
     margin: 10px;
+    
 }
 
 .icon:hover {
-    color: #ce7523;
-    border: 1px solid #ce7523;
+    color: var(--beniukon_bronze);
+    border: 1px solid var(--beniukon_bronze);
     margin: 10px;
 }
 
@@ -100,14 +132,22 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 50px;
-    background-color: #9595AB;
+    padding: 20px;
+    height: 100px;
+    background-color: var(--blue_horizon);
+    
     font-weight: bold;
+    font-size: 1.3rem;;
+}
+
+.aNav {
+    margin-left : 20px;
+    color: var(--blanc);
 }
 
 .aNav:hover {
     text-transform: uppercase;
-    color: white;
+    color: var(--nyc_taxi);
 }
 
 /* ******************* SECTION 1 : EXPERIENCE ********************* */
@@ -130,8 +170,8 @@ header {
     flex-direction: column;
     width: 600px;
     height: auto;
-    background-color: #EAEAF0;
-    border-radius: 10PX;
+    background-color: var(--twinkle_blue);
+    border-radius: 8PX;
     padding: 10px;
     margin: 10px;
 }
@@ -153,13 +193,13 @@ header {
 .Position {
     font-size: 2.5vh;
     font-weight: bold;
-    color: #42416F;
+    color: var(--blue_horizon);
 }
 
 .Dates {
     font-size: 2vh;
     font-weight: bold;
-    color: #900C3F;
+    color: var(--beniukon_bronze);
 }
 
 .CompanyLogo {
@@ -189,12 +229,12 @@ header {
 
 #competences {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     align-items: top;
     width: 90%;
-    margin: 300px auto 20px auto;
+    margin: 0 auto ;
 }
 
 .CompCard {
@@ -223,9 +263,15 @@ header {
     width: 100%;
     height: auto;
     padding: 10px 0;
-    background-color: #EAEAF0;
+    background-color: var(--blue_grey);
     font-size: 1.5rem;
     margin-top: 10px;
+    color: var(--blanc);
+}
+
+.bandeau_titre{
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .LogoComp {
@@ -251,4 +297,28 @@ header {
     width: 90%;
     
     margin: 50px auto 20px auto;
+}
+
+.vignette_diplome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.diplome{
+    width: 100px;
+    border-radius: 10px;
+    border:1px solid darkgrey;
+
+}
+
+/* ************************ FOOTER ***************************** */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }

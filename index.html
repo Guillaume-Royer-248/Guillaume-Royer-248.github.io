@@ -13,302 +13,45 @@
 <body>
     <header>
         <div class="container">
-            <div id=photo>
-                <img src="images/photo_mini.jpg" alt="Photo" id=photo />
-            </div>
-            <div id=identity>
+            <div class="identity">
                 <h1>Guillaume ROYER</h1>
-                <h2>Developpeur Web Fullstack JS en devenir</h2>
-                <p>06.21.34.36.38</p>
+                <h2 class="futur_metier">Developpeur Web Fullstack JS en devenir</h2>
+                <p class="phone_number">06.21.34.36.38</p>
             </div>
-            <div class="iconsContainer">
-                <a href=# class="icon" title="guillaume.royer4@wanadoo.fr"><i class="far fa-envelope"></i></a>
-                <a href=# class="icon"><i class="fab fa-linkedin"></i></a>
-                <a href=# class="icon"><i class="fab fa-instagram"></i></a>
-                <a href=# class="icon"><i class="fab fa-twitter"></i></a>
+            <nav>
+                <ul id=menu>
+                    <li><a href=index.html class="aNav">Acceuil</a></li>
+                    <li><a href=Experience.html class="aNav">Mon expérience</a></li>
+                    <li><a href=Competences.html class="aNav">Mes compétences</a></li>
+                    <li><a href=Formation.html class="aNav">Ma formation</a></li>
+                </ul>
             </div>
-        </div>
-        <nav>
-            <ul id=menu>
-                <li><a href=index.html class="aNav">Mon expérience</a></li>
-                <li><a href=#TransitionCompetences class="aNav">Mes compétences</a></li>
-                <li><a href=#TransitionFormation class="aNav">Ma formation</a></li>
-            </ul>
-
-        </nav>
     </header>
-
-    <section id=experience>
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">PROCUREMENT LEADER / PLANNER</span><br>
-                    <span class="Dates"> 2005-2006</span>
-                </p>
-
-                <a href="https://flex.com/" target="_blank"><img src="images/LogoFlex.jpg" alt="Logo FLEXTRONICS"
-                        id=LogoFlex class="CompanyLogo" /></a>
-            </div>
-            <div class="CardBody">
-                <ul>
-                    <li>Gérer l'approvisionnement d'un portefeuille de pièces mécaniques et électroniques</li>
-                    <li>Organiser et faire vivre le planning de production</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">SUPPLY CHAIN PILOT</span><br>
-                    <span class="Dates">2006-2007</span>
-                </p>
-                <a href="https://flex.com/" target="_blank"><img src="images/LogoFlex.jpg" alt="Logo FLEXTRONICS"
-                        id=LogoFlex class="CompanyLogo" /></a>
-            </div>
-            <div class="CardBody">
-                <ul>
-                    <li>Manager une équipe d'approvisionneurs (3 personnes)</li>
-                    <li>Etre garant du respect de la réalisation des besoins clients</li>
-                    <li>Organiser et faire vivre le planning de production</li>
-                    <li>Assurer le transfert d'une partie de l'activité sur un site en Hongrie</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">RESPONSABLE APPROVISIONNEMENT</span><br>
-                    <span class="Dates"> 2007</span>
-                </p>
-                <a href="https://www.grupoantolin.com/en" target="_blank"><img src="images/LogoAntolin.png"
-                        alt="Logo GRUPO ANTOLIN" id=LogoAntolin class="CompanyLogo" /></a>
-            </div>
-            <div class="CardBody">
-                <ul>
-                    <li>Manager une équipe d'approvisionneurs (3 personnes)</li>
-                    <li>Coordonner les besoins matière avec les plannings de production</li>
-                    <li>Gérer les sous-traitances Groupe (Maroc, Portugal, France)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">CHEF DE PROJET M&O TRANSPORT</span><br>
-                    <span class="Dates"> 2007-2010</span>
-                </p>
-                <a href="http://www.easydis.com/fr/" target="_blank"><img src="images/LogoEasydis.png"
-                        alt="Logo EASYDIS" id=LogoEasydis class="CompanyLogo" /></a>
-            </div>
-            <div class="CardBody">
-                <p>Pilotage des projets :</p>
-                <ul>
-                    <li>Mise en place d’une solution informatique mobile de gestion des livraisons à domicile.</li>
-                    <li>Evolution du logiciel de prise de RDV et d'optimisation de tournées de livraison.</li>
-                </ul>
-                <p>Support opérationnel aux utilisateurs du TMS et amélioration de la solution de Track & Trace.</p>
-            </div>
-        </div>
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">CHEF DE PROJET METHODES LOGISTIQUES</span><br>
-                    <span class="Dates"> 2010-2012</span>
-                </p>
-                <a href="http://www.easydis.com/fr/" target="_blank"><img src="images/LogoEasydis.png"
-                        alt="Logo EASYDIS" id=LogoEasydis class="CompanyLogo" /></a>
-            </div>
-            <div class="CardBody">
-                <ul>
-                    <li>Déploiement de la méthodologie SMB (Standards de la Manutention de Base) au sein des entrepôts
-                        du groupe CASINO</li>
-                    <li>Réalisation d’études et cotations logistiques (Intégration de nouveaux flux, réalisation de
-                        prestations
-                        logistiques particulières, évolutions du WMS, recherche de nouveaux process).</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">CONSULTANT AVANT-VENTE FRANCE ET INTERNATIONAL</span><br>
-                    <span class="Dates"> 2012-2020</span>
-                </p>
-                <a href="https://www.savoye.com/" target="_blank"><img src="images/LogoSavoye.jpg" alt="Logo SAVOYE"
-                        id=LogoSavoye class="CompanyLogo" /></a>
-            </div>
-            <div class="CardBody">
-                <ul>
-                    <li>Réponse aux cahiers des charges et établissement des offres.</li>
-                    <li>Réalisation et soutenance des démonstrations produit (WMS).</li>
-                    <li>Production des documents et outils commerciaux (supports de présentations PowerPoint, trame
-                        d'offre
-                        Excel, mémoire commercial, présentations diverses, schémas Google Sketchup).</li>
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">RESP. METHODES ET PROCESS COMMERCIAUX</span><br>
-                    <span class="Dates"> 2020-2021</span>
-                </p>
-                <a href="https://www.savoye.com/" target="_blank"><img src="images/LogoSavoye.jpg" alt="Logo SAVOYE"
-                        id=LogoSavoye class="CompanyLogo" /></a>
-            </div>
-            <div class="CardBody">
-                <ul>
-                    <li>Mettre en place les process commerciaux de la partie Lead Generation jusqu'à la phase de
-                        signature
-                        d'un
-                        contrat client</li>
-                    <li>Définir et mettre en place les outils (présentations, documents, trame d'offre, vidéos, ...)
-                        nécessaires
-                        aux équipes commerciales pour la vente des produits WMS, TMS, OMS et EDI</li>
-                    <li>Définir et mettre en place les interactions entre les équipes commerciales et les autres
-                        départements
-                        de
-                        l'entreprise (éditeur, intégrateur, services techniques, juridiques et financiers)</li>
-                    <li>Assurer le pilotage des indicateurs de performance commerciaux</li>
-                    <li>Assurer l'amélioration continue des process commerciaux</li>
-                    <li>Piloter l'activité Lead Generation Software</li>
-                    <li>Gérer une équipe de 3 personnes</li>
-                </ul>
-            </div>
-        </div>
-
-
-
-    </section>
+   
 
     <p id=TransitionCompetences></p>
 
-    <section id=competences>
-
-        <div class="Bandeau">
-            <p>Langues</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/EnFlag.png" alt="English Flag" Class="LogoComp">
-            <p>TOEIC : 800</p>
-        </div>
-
-
-        <div class="Bandeau">
-            <p>Languages</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoHTML.png" alt="HTML" Class="LogoComp">
-            <!-- <p>TOEIC : 800</p> -->
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoCSS.png" alt="CSS" Class="LogoComp">
-            <!-- <p>TOEIC : 800</p> -->
-        </div>
-
-        <div class="Bandeau">
-            <p>Logiciels</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoOffice.jpg" alt="Microsoft Office" Class="LogoComp">
-            <p>inclus VBA et SQL</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoAdobe.jpg" alt="Microsoft Office" Class="LogoComp">
-            <p>Suite Adobe</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoSketchup.jpg" alt="Google Sketchup" Class="LogoComp">
-            <!-- <p>Suite Adobe Creative Cloud</p> -->
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoFusion.png" alt="Autodesk Fusion 360" Class="LogoComp">
-            <!-- <p>Suite Adobe Creative Cloud</p> -->
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoPrusa.png" alt="PrusaSlicer" Class="LogoComp">
-            <p>PrusaSlicer</p>
-        </div>
-
-        <div class="Bandeau">
-            <p>Solutions Métier</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoDivalto.jpg" alt="Divalto ERP" Class="LogoComp">
-            <p>ERP</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoSap.jpg" alt="SAP" Class="LogoComp">
-            <p>ERP</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoSugar.png" alt="SUGAR CRM" Class="LogoComp">
-            <p>CRM</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoLm.jpg" alt="LMxt" Class="LogoComp">
-            <p>Warehouse Management System</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoMagistor.jpg" alt="maGistor" Class="LogoComp">
-            <p>Warehouse Management System</p>
-        </div>
-
-        <div class="CompCard">
-            <img src="images/LogoOdatio.jpg" alt="Odatio" Class="LogoComp">
-            <p>Warehouse Management System</p>
-        </div>
-    </section>
+    
 
     <p id=TransitionFormation></p>
 
-    <section id=formation>
 
-        <div class="Bandeau">
-            <p>Mes diplômes</p>
-        </div>
-
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">INGENIEUR EN GENIE INDUSTRIEL</span><br>
-                    <span class="Option">Option "Gestion de production</span><br>
-                    <span class="Dates"> 2005</span>
-                </p>
-                <a href="https://www.mines-stetienne.fr/" target="_blank"><img src="images/LogoMines.png"
-                        alt="Logo Mines Saint-Etienne" class="CompanyLogo" /></a>
-            </div>
-        </div>
-        <div class="ExpCard">
-            <div class="CardHeader">
-                <p class="Function"><span class="Position">BTS GESTION TECHNIQUE DES ESPACES INDUSTRIELS ET
-                        TERTIAIRES</span><br>
-                    <!-- <span class="Option">Option "Gestion de production</span><br> -->
-                    <span class="Dates"> 2002</span>
-                </p>
-                <a href="http://www.irup.com/" target="_blank"><img src="images/LogoIRUP.jpg" alt="Logo IRUP"
-                        class="CompanyLogo" /></a>
-            </div>
-        </div>
-
-    </section>
 
     </div>
+
+    <footer>
+        
+        <div class="iconsContainer">
+            <a href=# class="icon" title="guillaume.royer4@wanadoo.fr"><i class="far fa-envelope"></i></a>
+            <a href=# class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href=# class="icon"><i class="fab fa-instagram"></i></a>
+            <a href=# class="icon"><i class="fab fa-twitter"></i></a>
+        </div>
+
+
+
+
+    </footer>
 </body>
 
 </html>
