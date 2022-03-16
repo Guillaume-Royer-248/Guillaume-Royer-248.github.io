@@ -1,8 +1,7 @@
-# CV
-Mon CV
+# My resume
 
-Ce projet est mon premier projet HTML - CSS - JavaScript.
+This project is my very first HTML - CSS project.
 
-Il a été réalisé en suivant la formation "Apprenez à créer votre site web avec HTML5 et CSS3" sur la plateforme OPENCLASSROOMS mais également en autoformation via des recherches sur internet.
+It was carried out by following the training "Learn to create your website with HTML5 and CSS3" on the OPENCLASSROOMS platform but also in self-study via research on the internet.
 
-Ce projet m'a permis de m'entrainer aux languages HTML/CSS avant de suivre ma formation chez O'Clock de Développeur Fullstack JavaScript 
+This project allowed me to train in HTML/CSS languages before following my training at O'Clock as a Fullstack JavaScript Developer
